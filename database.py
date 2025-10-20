@@ -26,7 +26,7 @@ class Stringsanalysis(Base):
     id = Column(String, primary_key=True, index=True)  
     value = Column(String, nullable=False, unique=True, index=True)
     length = Column(Integer, nullable=False)
-    palindrome = Column(Boolean, nullable=False, index=True)
+    is_palindrome = Column(Boolean, nullable=False, index=True)
     unique_characters = Column(Integer, nullable=False)
     word_count = Column(Integer, nullable=False, index=True)
     word_hash = Column(String, nullable=False)
